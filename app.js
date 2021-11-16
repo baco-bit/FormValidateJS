@@ -8,7 +8,6 @@ const lastName = document.getElementById("lastName");
 const city = document.getElementById("city");
 const postalCode = document.getElementById("postalCode");
 const button = document.getElementById("button");
-const cancel = document.getElementById("cancel");
 const textArea = document.getElementById("textArea");
 let error = false;
 const inputs = [
@@ -21,6 +20,10 @@ const inputs = [
     postalCode,
     textArea,
 ];
+
+function funcion_reiniciar(){
+    document.getElementById("form").reset();
+    }
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
